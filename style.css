@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  gap: 1.6rem;
+
+  background: linear-gradient(180deg, #728294 0%, rgba(114, 130, 148, 0) 100%),
+    #4d5363;
+}
+
+.btn {
+  width: 20rem;
+  height: 8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7.5rem;
+
+  border: none;
+  border-radius: 1rem;
+  background: #3e4351;
+  box-shadow: 0px 48px 32px 0px rgba(0, 0, 0, 0.15) inset;
+
+  position: relative;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.toggle {
+  position: absolute;
+  left: 5px;
+
+  height: 6.7rem;
+  width: 9.5rem;
+
+  background: rgba(255, 255, 255, 0.414);
+  backdrop-filter: blur(3px);
+  border-radius: 1rem;
+  transform: translateX(0);
+
+  transition: all 0.4s;
+}
+
+.right {
+  transform: translateX(100%);
+}
+
+.circle {
+  width: 2rem;
+  height: 2rem;
+
+  border-radius: 50%;
+}
+
+.circle--red {
+  background-color: rgba(255, 92, 92, 1);
+  box-shadow: 0 0px 10px rgba(255, 92, 92, 1), 0 0px 20px rgba(255, 92, 92, 1),
+    0 0px 30px rgba(255, 92, 92, 1);
+}
+
+.circle--green {
+  background-color: #87ff5c;
+  box-shadow: 0 0px 10px #87ff5c, 0 0px 20px #87ff5c, 0 0px 30px #87ff5c;
+}
+
+.circle--yellow {
+  background-color: #d55cff;
+  box-shadow: 0 0px 10px #d55cff, 0 0px 20px #d55cff, 0 0px 30px #d55cff;
+}
+
+.circle--blue {
+  background-color: #00e0ff;
+  box-shadow: 0 0px 10px #00e0ff, 0 0px 20px #00e0ff, 0 0px 30px #00e0ff;
+}
